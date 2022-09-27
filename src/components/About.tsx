@@ -1,0 +1,38 @@
+import React from "react";
+
+const About = () => {
+	return (
+		<div className='w-full md:h-screen p-2 flex items-center py-16'>
+			<div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+				<div className='col-span-2'>
+					<p className='uppercase text-xl tracking-widest text-[#5651e5]'>
+						About
+					</p>
+					<h2 className='py-4'>Who I am</h2>
+					<p className='py-2 text-gray-600'>
+						I've worked many odd jobs in retail, restaurants and Cafe's up to
+						management. I've always had a passion for technology and computers
+						and decided to learn how to make simple websites which turned into
+						some freelance gigs.
+					</p>
+					<p className='py-2 text-gray-600'>
+						as of recent I've become more intrigued with building web
+						applications which solve personal problems.
+					</p>
+					<p className='py-2 text-gray-600 underline cursor-pointer'>
+						Check out some of my latest projects
+					</p>
+				</div>
+				<div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+					<img
+						className='rounded-xl'
+						src='https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80'
+						alt='/'
+					/>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default About;
