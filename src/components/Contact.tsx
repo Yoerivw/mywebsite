@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Contact = () => {
 	return (
-		<div id='contact' className='w-full lg:h-screen'>
-			<div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
+		<div id='contact' className='w-full lg:h-screen snap-start'>
+			<div className='max-w-[1240px] m-auto px-2 pt-16 w-full'>
 				<p className='text-xl tracking-widest uppercase text-[#5651e5]'>
 					Contact
 				</p>
@@ -93,7 +93,7 @@ const Contact = () => {
 									<label className='uppercase text-sm py-2'>Message</label>
 									<textarea
 										className='border-2 rounded-lg p-3 border-gray-300'
-										rows={10}></textarea>
+										rows={5}></textarea>
 								</div>
 								<button className='w-full p-4 text-gray-100 mt-4'>
 									Send Message

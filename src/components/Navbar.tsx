@@ -74,9 +74,6 @@ const Navbar = () => {
 								Contact
 							</li>
 						</Link>
-						<Link href='/posts'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>Blog</li>
-						</Link>
 					</ul>
 					<div onClick={handleNav} className='md:hidden'>
 						<AiOutlineMenu size={25} />
