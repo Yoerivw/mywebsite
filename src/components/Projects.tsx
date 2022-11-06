@@ -10,13 +10,14 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
 	return (
 		<div id='projects' className='w-full h-screen snap-start'>
-			<div className='max-w-[1240px] mx-auto px-2 py-16'>
+			<div className='max-w-[1240px] mx-auto px-2 py-14'>
 				<p className='text-xl tracking-widest uppercase text-[#5651e5]'>
 					Projects
 				</p>
 				<h2 className='py-4'>What I've Built</h2>
-				<div className='grid md:grid-cols-2 gap-8'>
-					{/*     grid-template-columns: repeat(2, minmax(0, 233px)); progress */}
+				<div className='grid md:grid-cols-2 lg:grid-cols-[repeat(2,_minmax(0,_486px))] gap-8 '>
+					{/*     grid-template-columns: repeat(2, minmax(0, 233px)); progress
+					 */}
 					<ProjectItem
 						title='Property Finder'
 						backgroundImg={propertyImg}
