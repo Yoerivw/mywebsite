@@ -49,7 +49,7 @@ const Navbar = () => {
 					? "fixed w-full h-20 shadow-xl z-[100]"
 					: "fixed w-full h-20 z-[100]"
 			}>
-			<div className='flex justify-center items-center w-full h-full px-2 2xl:px-16'>
+			<div className='flex justify-end md:justify-center items-center w-full h-full pr-14 md:px-2 2xl:px-16'>
 				<div>
 					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
 						<Link href='/'>

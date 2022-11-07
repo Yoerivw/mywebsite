@@ -15,7 +15,7 @@ const Projects = () => {
 					Projects
 				</p>
 				<h2 className='py-4'>What I've Built</h2>
-				<div className='grid md:grid-cols-2 lg:grid-cols-[repeat(2,_minmax(0,_486px))] gap-8 '>
+				<div className='grid sm:grid-cols-2 lg:grid-cols-[repeat(2,_minmax(0,_486px))] gap-8 '>
 					{/*     grid-template-columns: repeat(2, minmax(0, 233px)); progress
 					 */}
 					<ProjectItem
