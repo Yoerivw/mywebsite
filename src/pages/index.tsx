@@ -10,7 +10,7 @@ import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
 	return (
-		<div className='py-4 px-8 overflow-y-scroll h-screen scroll-smooth snap-y snap-mandatory'>
+		<div className='pt-4 px-8 overflow-y-scroll h-screen scroll-smooth snap-y snap-mandatory'>
 			<Main />
 			<About />
 			<Projects />
