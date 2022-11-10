@@ -5,12 +5,14 @@ import React from "react";
 type ProjectItemProps = {
 	title: string;
 	backgroundImg: StaticImageData;
+	technologyStack: string;
 	projectUrl: string;
 };
 
 const ProjectItem = ({
 	title,
 	backgroundImg,
+	technologyStack,
 	projectUrl,
 }: ProjectItemProps) => {
 	return (
@@ -24,7 +26,7 @@ const ProjectItem = ({
 				<h3 className='text-2xl text-white tracking-wider text-center'>
 					{title}
 				</h3>
-				<p className='pb-4 pt-2 text-white text-center'>React JS</p>
+				<p className='pb-4 pt-2 text-white text-center'>{technologyStack}</p>
 				<Link href={projectUrl}>
 					<p className='text-center py-3 rounded-lg bg-white text-gray-600 font-bold text-lg cursor-pointer'>
 						More Info

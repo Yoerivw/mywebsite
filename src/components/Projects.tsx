@@ -19,23 +19,27 @@ const Projects = () => {
 					{/*     grid-template-columns: repeat(2, minmax(0, 233px)); progress
 					 */}
 					<ProjectItem
-						title='Property Finder'
+						title='Bergman, Ross & Partners'
 						backgroundImg={propertyImg}
-						projectUrl='/property'
+						technologyStack='WordPress, HTML, CSS, JavaScript'
+						projectUrl='/brp'
 					/>
 					<ProjectItem
-						title='Crypto App'
+						title='Jade Tavern'
 						backgroundImg={cryptoImg}
-						projectUrl='/property'
+						technologyStack='WordPress, HTML, CSS, JavaScript'
+						projectUrl='/jadetavern'
 					/>
 					<ProjectItem
-						title='netflix App'
+						title='CW Attorneys'
 						backgroundImg={netflixImg}
-						projectUrl='/property'
+						technologyStack='HTML, CSS, JavaScript'
+						projectUrl='/cwa'
 					/>
 					<ProjectItem
 						title='twitch App'
 						backgroundImg={twitchImg}
+						technologyStack='HTML, CSS, JavaScript'
 						projectUrl='/property'
 					/>
 				</div>

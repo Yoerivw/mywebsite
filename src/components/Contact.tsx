@@ -9,15 +9,13 @@ const Contact = () => {
 			id='contact'
 			className='w-full h-screen lg:h-screen snap-start flex items-center'>
 			<div className='max-w-[1240px] m-auto px-2 pt-16 w-full'>
-				<p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-					Contact
-				</p>
-				<h2 className='py-4'>Get In Touch</h2>
+				<div>
+					<h2 className='py-4'>Get In Touch</h2>
+				</div>
 				<div className=''>
-					<div className='lg:p-4 h-full'>
+					<div className='lg:py-8 h-full'>
 						<div>
-							<p className='uppercase pt-8'>Connect With Me</p>
-							<div className='flex items-center justify-between max-w-[390px] m-auto py-4'>
+							<div className='flex items-center justify-between max-w-[390px] pr-4'>
 								<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 									<FaLinkedinIn size={35} />
 								</div>
@@ -34,7 +32,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<p className='text-center'>Made with love</p>
+				<p>Made with Next.js from Durbanville, South Africa</p>
 			</div>
 		</div>
 	);
