@@ -1,10 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import propertyImg from "../../public/assets/project-img/property.jpg";
-import cryptoImg from "../../public/assets/project-img/crypto.jpg";
-import netflixImg from "../../public/assets/project-img/netflix.jpg";
-import twitchImg from "../../public/assets/project-img/twitch.jpg";
+import brpImage from "../../public/assets/project-img/brp-image.png";
+import jadeImage from "../../public/assets/project-img/jadetavern-image.png";
+import cwaImage from "../../public/assets/project-img/cwa-screenshot.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -20,28 +17,28 @@ const Projects = () => {
 					 */}
 					<ProjectItem
 						title='Bergman, Ross & Partners'
-						backgroundImg={propertyImg}
+						backgroundImg={brpImage}
 						technologyStack='WordPress, HTML, CSS, JavaScript'
 						projectUrl='/brp'
 					/>
 					<ProjectItem
 						title='Jade Tavern'
-						backgroundImg={cryptoImg}
+						backgroundImg={jadeImage}
 						technologyStack='WordPress, HTML, CSS, JavaScript'
 						projectUrl='/jadetavern'
 					/>
 					<ProjectItem
 						title='CW Attorneys'
-						backgroundImg={netflixImg}
+						backgroundImg={cwaImage}
 						technologyStack='HTML, CSS, JavaScript'
 						projectUrl='/cwa'
 					/>
-					<ProjectItem
+					{/* <ProjectItem
 						title='twitch App'
 						backgroundImg={twitchImg}
 						technologyStack='HTML, CSS, JavaScript'
 						projectUrl='/property'
-					/>
+					/> */}
 				</div>
 			</div>
 		</div>

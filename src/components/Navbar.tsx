@@ -12,13 +12,9 @@ const Navbar = () => {
 	const [navBg, setNavBg] = useState("#ecf0f3");
 	const [linkColor, setLinkColor] = useState("#1f2937");
 	const router = useRouter();
-	console.log(router);
 
 	useEffect(() => {
-		if (
-			router.asPath === "/property" ||
-			router.asPath === `/posts/${router.query.postId}`
-		) {
+		if (router.asPath === "/brp") {
 			setNavBg("transparent");
 			setLinkColor("#ecf0f3");
 		} else {
@@ -52,10 +48,10 @@ const Navbar = () => {
 			<div className='flex justify-end md:justify-center items-center w-full h-full pr-14 md:px-2 2xl:px-16'>
 				<div>
 					<ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-						<Link href='#home'>
+						<Link href='/#home'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
 						</Link>
-						<Link href='#about'>
+						<Link href='/#about'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>About</li>
 						</Link>
 						<Link href='/#projects'>
@@ -66,7 +62,7 @@ const Navbar = () => {
 						<Link href='/#skills'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
 						</Link>
-						<Link href='#contact'>
+						<Link href='/#contact'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>
 								Contact
 							</li>
