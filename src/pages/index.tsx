@@ -12,10 +12,8 @@ const Home: NextPage = () => {
 	return (
 		<div className='pt-4 px-8 overflow-y-scroll h-screen scroll-smooth snap-y snap-mandatory'>
 			<Main />
-			<About />
 			<Projects />
 			<Skills />
-			<Contact />
 		</div>
 	);
 };
