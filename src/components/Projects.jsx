@@ -20,7 +20,7 @@ const Projects = () => {
 
 		setProjectText({
 			title: "Jade Tavern",
-			text: "This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text This is Jade text",
+			text: "Bergman Ross and Partners is a large radiological company. Their main goal was to create an online booking functionality on their website. The project included the development the of their entire website, including the booking functionality, as well as the maintenance thereof.",
 			link: "www.jadetavern.co.za",
 			image: jadeImage,
 		});
@@ -43,7 +43,7 @@ const Projects = () => {
 
 		setProjectText({
 			title: "CW Attorneys",
-			text: "This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text This is cwa text",
+			text: "Bergman Ross and Partners is a large radiological company. Their main goal was to create an online booking functionality on their website. The project included the development the of their entire website, including the booking functionality, as well as the maintenance thereof.",
 			link: "https://www.chriswentzelattorneys.co.za/",
 			image: cwaImage,
 		});
@@ -56,8 +56,8 @@ const Projects = () => {
 			<div className='max-w-[1240px] w-screen mx-auto px-2 py-14'>
 				<h2 className='mb-10'>Websites I've built</h2>
 
-				<div className='flex flex-column justify-between'>
-					<div>
+				<div className='flex flex-column flex-wrap justify-between relative'>
+					<div className="py-[5px] pr-[30px] before:content-[' '] before:w-[60px] before:h-[60px] before:border-r-black before:border-r-2 before:border-t-black before:border-t-2 before:absolute before:left-[130px]">
 						<ul className='text-lg leading-loose min-w-[160px]'>
 							<li
 								id='brp'
@@ -65,7 +65,7 @@ const Projects = () => {
 								className={`${
 									activeProject == "brp"
 										? "underline rounded p-2 text-indigo-500 transition ease-in-out delay-450"
-										: "p-"
+										: "p-2"
 								}`}>
 								BRP Radiologists
 							</li>
@@ -92,33 +92,60 @@ const Projects = () => {
 						</ul>
 					</div>
 					<div>
-						<h3 className='text-2xl mb-5 b-5 transition-transform'>
+						<h3 className='text-2xl mb-5 b-5 transition-transform underline'>
 							{projectText.title}
 						</h3>
 						<p className='transition-opacity max-w-[550px] pb-8 '>
 							{projectText.text}
 						</p>
-						<p>Tools Used:</p>
-						<div>
-							<div className='grid grid-cols-2 gap-4 justify-center items-center'>
-								<div className='m-auto'>
-									<Image
-										src={"/../public/assets/skill-icons/wordpress.png"}
-										width={64}
-										height={64}
-										alt='/'
-									/>
-								</div>
-								<div className='flex flex-col items-center justify-center'>
-									<h3>WordPress</h3>
-								</div>
+						<p className=' font-bold'>Tools Used:</p>
+						<div className='flex flex-row space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-2'>
+							<div className='text-center'>
+								<Image
+									src={"/../public/assets/skill-icons/wordpress.png"}
+									width={32}
+									height={32}
+									alt='/'
+								/>
+
+								<p>WordPress</p>
 							</div>
-							<a
-								href={`"${projectText.link}"`}
-								className='underline text-blue-600 font-bold text-xl transition-all'>
-								View Site
-							</a>
+							<div className='text-center'>
+								<Image
+									src={"/../public/assets/skill-icons/html.png"}
+									width={32}
+									height={32}
+									alt='/'
+								/>
+
+								<p>HTML</p>
+							</div>
+							<div className='text-center'>
+								<Image
+									src={"/../public/assets/skill-icons/css.png"}
+									width={32}
+									height={32}
+									alt='/'
+								/>
+
+								<p>CSS</p>
+							</div>
+							<div className='text-center'>
+								<Image
+									src={"/../public/assets/skill-icons/javascript.png"}
+									width={32}
+									height={32}
+									alt='/'
+								/>
+
+								<p>JS</p>
+							</div>
 						</div>
+						<a
+							href={`"${projectText.link}"`}
+							className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+							View Site
+						</a>
 					</div>
 				</div>
 			</div>
