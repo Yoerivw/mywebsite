@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import brpImage from "../../public/assets/project-img/brp-image.png";
-import jadeImage from "../../public/assets/project-img/jadetavern-image.png";
-import cwaImage from "../../public/assets/project-img/cwa-screenshot.png";
+
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const Projects = () => {
@@ -147,7 +145,7 @@ const Projects = () => {
 	return (
 		<div
 			id='projects'
-			className='w-full h-screen snap-start flex items-center text-gray-700'>
+			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2'>
 			<div className='max-w-[1240px] w-screen mx-auto px-2 py-14'>
 				<h2 className='mb-10'>Websites I've built</h2>
 
